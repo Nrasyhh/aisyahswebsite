@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9e6e6; /* Light pink background */
+            color: #333; /* Dark text color */
+        }
+
+        header {
+            background-color: #f24c87; /* Pink header background */
+            color: #fff;
+            padding: 20px;
+            text-align: center; /* Center align header text */
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center; /* Center align navigation links */
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px; /* Increase font size */
+            transition: color 0.3s; /* Smooth color transition */
+        }
+
+        nav ul li a:hover {
+            color: #f9e6e6; /* Change text color on hover */
+        }
+
+        section {
+            padding: 30px;
+            margin-bottom: 30px;
+            background-color: #fff; /* White section background */
+            border-radius: 10px; /* Rounded corners for sections */
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Drop shadow effect */
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .description {
+            flex: 1;
+            padding-right: 20px; /* Add some spacing between description and image */
+            text-align: justify;
+        }
+
+        .image {
+            flex: 1;
+            text-align: center;
+        }
+
+        .image img {
+            width: 60%; /* Adjusted width to 80% */
+            height: auto;
+            border-radius: 10px; /* Rounded corners for the image */
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #f24c87; /* Pink footer background */
+            color: #fff;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* Larger title */
+        h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        /* Grid for introduction images */
+        .introduction-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        /* Grid item */
+        .introduction-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* Contact form styles */
+        form {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 50%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        input[type="submit"] {
+            background-color: #f24c87;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #d9366e;
+        }
+
+        /* Styling for pink buttons */
+        button {
+            background-color: #f24c87;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #d9366e;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>WELCOME TO AISYAH'S WEBSITE</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('about')">About Me</a></li>
+                <li><a href="#" onclick="showSection('hobbies')">Hobbies</a></li>
+                <li><a href="#" onclick="showSection('friends')">Friends</a></li>
+                <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <div class="description">
+                <h2>About Me</h2>
+                <p>Welcome to my personal corner of the internet! I'm Aisyah, a passionate Web Developer dedicated to crafting beautiful and functional websites that leave a lasting impression.
+
+With a love for clean code and pixel-perfect designs, I strive to create digital experiences that captivate and inspire. Whether it's building user-friendly interfaces or optimizing performance, I'm always up for a coding challenge.
+
+When I'm not immersed in lines of code, you'll find me exploring the latest web development trends, sipping on a cup of coffee while brainstorming new project ideas, or enjoying the great outdoors for some fresh inspiration. If you want to get to know me better, don't forget to click the button below and follow all of my social media accounts&#127799;.</p>
+                <!-- Add Instagram, Facebook, and TikTok buttons -->
+                <div>
+                    <a href="https://www.instagram.com/nr.asyhh__?igsh=anFiNnN4bnVhODBy&utm_source=qr" target="_blank"><button>Instagram</button></a>
+                    <a href="https://www.facebook.com/share/TEdtVsAqUtFRVPe4/?mibextid=uzlsIk" target="_blank"><button>Facebook</button></a>
+                    <a href="https://www.tiktok.com/@hi.aisyahhh_?_t=8lXuGgOAywS&_r=1" target="_blank"><button>TikTok</button></a>
+                </div>
+            </div>
+            <div class="image">
+                <img src="Pink Cute Photo Depop Profile Picture.jpg" alt="Profile Picture">
+            </div>
+        </div>
+    </section>
+
+<section id="hobbies">
+    <h2>Hobbies</h2>
+    <p>This is my hobby! I really love to hear this song.</p>
+    <!-- Embedding the audio player for the MP3 file -->
+    <audio controls>
+        <source src="what was I made for_ (Instrumental).mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <p>Check out this video. This is also my fav song!</p>
+<iframe width="500" height="315"
+src="https://www.youtube.com/embed/tgbNymZ7vqY">
+</iframe>
+</section>
+
+    <section id="friends">
+        <h2>Friends</h2>
+        <p>Friends are individuals with whom we share a special bond of mutual affection, trust, and support.</p>
+        <video controls>
+            <source src="friends.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+    <p>They are my happy pills &#129392;&#128538;&#127804;</p>
+
+    <img src="friends2.jpg" alt="Friends Image">
+  <img src="friends1.jpg" alt="Friends Image">
+
+</section>
+
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Please contact me via the form below or through email.</p>
+        <form action="contact.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+            <input type="submit" value="Send">
+        </form>
+    </section>
+
+
+    <footer>
+        <p>&copy; 2024 Aisyah's Personal Website.</p>
+    </footer>
+
+    <script>
+        // Function to toggle section visibility
+        function showSection(sectionId) {
+            // Hide all sections
+            var sections = document.getElementsByTagName('section');
+            for (var i = 0; i < sections.length; i++) {
+                sections[i].style.display = 'none';
+            }
+            // Show the selected section
+            var selectedSection = document.getElementById(sectionId);
+            if (selectedSection) {
+                selectedSection.style.display = 'block';
+            }
+        }
+
+        // Show the about section by default
+        window.onload = function() {
+            showSection('about');
+        };
+    </script>
+</body>
+</html>
